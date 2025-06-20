@@ -12,10 +12,6 @@ export function convertToURLSearchParams(
   Object.entries(params).forEach(([key, value]) => {
     if (typeof value === "string") {
       searchParams.append(key, value);
-    } else if (Array.isArray(value)) {
-      value.forEach((v) => {
-        if (v != null) searchParams.append(key, v);
-      });
     }
   });
 

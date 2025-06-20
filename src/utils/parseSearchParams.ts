@@ -1,14 +1,5 @@
 import { GetCharactersCardQueryVariables } from "@/graphql/generated/graphql";
-import {
-  SearchParamsType,
-  ParsedParams,
-  FilterCategory,
-  ActiveFilters,
-} from "@/types";
-
-export function convertToURLSearchParams(searchParams: SearchParamsType) {
-  return new URLSearchParams(searchParams as Record<string, string>);
-}
+import { ParsedParams, FilterCategory, ActiveFilters } from "@/types";
 
 export function parseSearchParams(
   searchParams: URLSearchParams,

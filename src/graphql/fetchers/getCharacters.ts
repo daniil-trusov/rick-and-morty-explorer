@@ -1,5 +1,6 @@
 import { graphQLClient } from "@/graphql/client";
 import {
+  CharacterCardInfoFragment,
   GetCharacterFullDocument,
   GetCharacterFullQuery,
   GetCharacterFullQueryVariables,
@@ -12,7 +13,7 @@ export async function fetchCharacterCards(
   params: GetCharactersCardQueryVariables
 ): Promise<{
   info: NonNullable<GetCharactersCardQuery["characters"]>["info"];
-  results: NonNullable<GetCharactersCardQuery["characters"]>["results"];
+  results: CharacterCardInfoFragment[];
 }> {
   const data = await graphQLClient.request<
     GetCharactersCardQuery,
@@ -23,7 +24,9 @@ export async function fetchCharacterCards(
 
   return {
     info: characters?.info ?? {},
-    results: characters?.results ?? [],
+    results: (characters?.results ?? []).filter(
+      (char): char is CharacterCardInfoFragment => char !== null
+    ),
   };
 }
 
