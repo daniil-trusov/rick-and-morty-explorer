@@ -1,0 +1,7 @@
+#import "../fragments/characterFragments.graphql"
+
+query GetCharacterFull($id: ID!) {
+  character(id: $id) {
+    ...CharacterFullInfo
+  }
+}
