@@ -6,7 +6,7 @@ A fully responsive, SSR-powered web application built with **Next.js**, **TypeSc
 
 ## 🚀 Live Demo
 
-[View Live Demo](https://your-demo-link.com)
+[View Live Demo](https://rick-and-morty-explorer-wheat.vercel.app/)
 
 ---
 
@@ -76,11 +76,3 @@ A fully responsive, SSR-powered web application built with **Next.js**, **TypeSc
 - Layout adapts:
   - On mobile — all content stacks vertically;
   - On larger screens — uses grid layout with columns for image, info, and episode data;
-
----
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
