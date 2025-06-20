@@ -1,0 +1,34 @@
+fragment CharacterCardInfo on Character {
+  id
+  name
+  image
+  status
+  species
+  location {
+    name
+  }
+  episode {
+    id
+  }
+}
+
+fragment CharacterFullInfo on Character {
+  ...CharacterCardInfo
+  gender
+  origin {
+    name
+    type
+    dimension
+  }
+  location {
+    name
+    type
+    dimension
+  }
+  episode {
+    id
+    name
+    air_date
+    episode
+  }
+}

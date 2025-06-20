@@ -1,0 +1,37 @@
+[
+  {
+    "key": "status",
+    "label": "Status",
+    "options": [
+      { "key": "alive", "label": "Alive" },
+      { "key": "dead", "label": "Dead" },
+      { "key": "unknown", "label": "Unknown" }
+    ]
+  },
+  {
+    "key": "species",
+    "label": "Species",
+    "options": [
+      { "key": "human", "label": "Human" },
+      { "key": "alien", "label": "Alien" },
+      { "key": "humanoid", "label": "Humanoid" },
+      { "key": "unknown", "label": "Unknown" },
+      { "key": "poopybutthole", "label": "Poopybutthole" },
+      { "key": "mythological creature", "label": "Mythological Creature" },
+      { "key": "animal", "label": "Animal" },
+      { "key": "robot", "label": "Robot" },
+      { "key": "cronenberg", "label": "Cronenberg" },
+      { "key": "disease", "label": "Disease" }
+    ]
+  },
+  {
+    "key": "gender",
+    "label": "Gender",
+    "options": [
+      { "key": "male", "label": "Male" },
+      { "key": "female", "label": "Female" },
+      { "key": "genderless", "label": "Genderless" },
+      { "key": "unknown", "label": "Unknown" }
+    ]
+  }
+]
