@@ -7,7 +7,7 @@ import { MAX_CONTENT_SIZE, MIN_CONTENT_SIZE } from "@/config/constants";
 import { Header, Footer } from "@/components/layout";
 
 export const metadata: Metadata = {
-  title: "Rick & Morty Wiki",
+  title: "Rick & Morty Explorer",
   description: "Wubba lubba dub dub!",
 };
 

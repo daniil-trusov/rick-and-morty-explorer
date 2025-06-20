@@ -18,7 +18,7 @@ export default function Footer() {
 
         <Link
           className="hover:text-gray-700"
-          href="https://github.com/daniil-trusov/rick-and-morty-wiki"
+          href="https://github.com/daniil-trusov/rick-and-morty-explorer"
           target="_blank"
           rel="noopener noreferrer"
         >
